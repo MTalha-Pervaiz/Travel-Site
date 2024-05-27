@@ -1,0 +1,241 @@
+body {
+    font-family: Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #FFFFFF;
+    position: fixed;
+    width: 97%;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.header .travelsite-text {
+    color: #335576;
+    margin: 0;
+    font-size: 24px;
+}
+
+.header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.header nav ul li {
+    margin-left: 20px;
+}
+
+.header nav ul li a {
+    text-decoration: none;
+    color: #335576;
+    font-size: 16px;
+    padding-bottom: 5px;
+}
+
+.header nav ul li a.active,
+.header nav ul li a:hover {
+    border-bottom: 2px solid #DB7A4E;
+}
+
+.banner {
+    background-color: #FEFAF5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 20px 20px 20px;
+    color: #335576;
+    margin-top: 60px;
+}
+
+.banner-text-container {
+    flex: 1;
+}
+
+.banner-image {
+    flex: 1;
+    background-image: url('/assets/Images/hero.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 350px;
+    max-width: 125%;
+}
+
+.banner-heading {
+    color: #335576;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.banner-text {
+    color: #335576;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.get-started-btn {
+    background-color: #DB7A4E;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.get-started-btn:hover {
+    opacity: 0.8;
+}
+
+.recommendations {
+    padding: 50px;
+    background-color: #FFFFFF;
+}
+
+.recommendations-heading {
+    color: #335576;
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.recommendations-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.recommendations-card {
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    text-align: center;
+    cursor: pointer;
+    width: 20%; 
+    transition: transform 0.2s;
+    position: relative;
+}
+
+.recommendations-card:hover {
+    transform: scale(1.05);
+}
+
+.recommendations-card img {
+    width: 100%;
+    height: auto;
+}
+
+.recommendations-card h3 {
+    color: #FFFFFF;
+    margin: 0;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+footer {
+    background-color: #FEFAF5;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer div {
+    flex: inherit;
+}
+
+.socials-icons {
+   display: flex;
+}
+
+footer h3 {
+    color: #335576;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+footer h6 {
+    color: #DB7A4E;
+    font-size: 16px;
+    margin: 0 0 5px;
+}
+
+footer p {
+    color: #335576;
+    margin: 0 0 10px;
+    font-size: 14px;
+}
+
+.hours-content div {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+footer .socials-icons a {
+    margin-right: 10px;
+}
+
+footer .socials-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+.destination-banner {
+    background-size: cover;
+    background-position: center;
+    color: #FFFFFF;
+    padding: 100px 20px;
+    text-align: center;
+    font-size: 36px;
+}
+
+.itinerary {
+    padding: 20px;
+}
+
+.itinerary h2 {
+    color: #335576;
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.itinerary .day {
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.itinerary .day h3 {
+    color: #DB7A4E;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.itinerary .day ul {
+    list-style: none;
+    padding: 0;
+}
+
+.itinerary .day ul li {
+    color: #335576;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
