@@ -1,0 +1,249 @@
+body {
+    font-family: Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #FFFFFF;
+    position: fixed;
+    width: 97%;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.header .travelsite-text {
+    color: #335576;
+    margin: 0;
+    font-size: 24px;
+}
+
+.header .travelsite-text a {
+    color: #335576;
+    text-decoration: none;
+}
+
+.header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.header nav ul li {
+    margin-left: 20px;
+}
+
+.header nav ul li a {
+    text-decoration: none;
+    color: #335576;
+    font-size: 16px;
+    padding-bottom: 5px;
+}
+
+.header nav ul li a.active,
+.header nav ul li a:hover {
+    border-bottom: 2px solid #DB7A4E;
+}
+
+.destination-banner {
+    background-size: cover;
+    background-position: center;
+    color: #FFFFFF;
+    padding: 100px 20px;
+    text-align: center;
+    font-size: 36px;
+    margin-top: 60px;
+    height: calc(100vh - 60px); /* Adjust height to cover full screen minus header */
+    position: relative;
+    z-index: 1;
+    top: -10px;
+}
+
+.itinerary {
+    padding: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.itinerary h2 {
+    color: #335576;
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.itinerary-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.itinerary-card {
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    text-align: center;
+    cursor: pointer;
+    width: auto;
+    height: auto;
+    transition: transform 0.2s;
+    position: relative;
+}
+
+.itinerary-card:hover {
+    transform: scale(1.05);
+}
+
+.itinerary-card h3 {
+    color: #000000;
+    font-weight: 600;
+    border-bottom-color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-top: 0;
+    position: relative;
+    border-style: solid;
+    border-top-color: white;
+    border-right-color: white;
+    border-left-color: white;
+    border-bottom-width: thick;
+}
+
+.destination-header {
+    display: flex;
+    justify-content: start;
+    margin-bottom: 15px;
+}
+
+.itinerary-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.itinerary-card ul li {
+    color: #030507;
+    background-color:#FEFAF5;
+    font-size: 40px;
+    margin-bottom: 56px;
+}
+
+footer {
+    background-color: #FEFAF5;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer div {
+    flex: auto;
+}
+
+.socials-icons {
+   display: flex;
+}
+
+footer h3 {
+    color: #335576;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+footer h6 {
+    color: #DB7A4E;
+    font-size: 16px;
+    margin: 0 0 5px;
+}
+
+footer p {
+    color: #335576;
+    margin: 0 0 10px;
+    font-size: 14px;
+}
+
+.hours-content div {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+footer .socials-icons a {
+    margin-right: 10px;
+}
+
+footer .socials-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+
+.hours-content div {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+footer .socials-icons a {
+    margin-right: 10px;
+}
+
+footer .socials-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+.get-started-container h2 {
+    color: #335576;
+    margin-bottom: 50px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    color: #335576;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.submit-btn {
+    background-color: #DB7A4E;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+.submit-btn:hover {
+    background-color: #FFC080;
+
+}
+
+.get-started-container {
+    background-color: #F7F7F7;
+    padding: 20px;
+    border: 1px solid #CCCCCC;
+    border-radius: 10px;
+}
