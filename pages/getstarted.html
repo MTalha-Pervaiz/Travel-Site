@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/destinations.css">
-    <title>Travel Site - Greece</title>
+    <title>Travel Site - Get Started</title>
 </head>
 <body>
     <header class="header">
@@ -14,49 +14,41 @@
                 <li><a href="/index.html">Home</a></li>
                 <li><a href="/pages/hawaii.html">Hawaii</a></li>
                 <li><a href="/pages/iceland.html">Iceland</a></li>
-                <li><a href="/pages/greece.html" class="active">Greece</a></li>
-                <li><a href="/pages/getstarted.html">Get Started</a>
+                <li><a href="/pages/greece.html">Greece</a></li>
+                <li><a href="/pages/getstarted.html" class="active">Get Started</a></li>
             </ul>
         </nav>
     </header>
 
-    <section class="destination-banner" style="background-image: url('/assets/Images/greece.jpg');">
-        <div class="destination-header">
-            <h2>Greece</h2>
-        </div>
-
-    <section class="itinerary">
-        <div class="itinerary-container">
-            <div class="itinerary-card">
-                <h3>Friday</h3>
-                <ul>
-                    <li>Breakfast</li>
-                    <li>Lunch</li>
-                    <li>Dinner</li>
-                    <li>Dancing</li>
-                </ul>
-            </div>
-            <div class="itinerary-card">
-                <h3>Saturday</h3>
-                <ul>
-                    <li>Breakfast</li>
-                    <li>Lunch</li>
-                    <li>Dinner</li>
-                    <li>Dancing</li>
-                </ul>
-            </div>
-            <div class="itinerary-card">
-                <h3>Sunday</h3>
-                <ul>
-                    <li>Breakfast</li>
-                    <li>Lunch</li>
-                    <li>Dinner</li>
-                    <li>Dancing</li>
-                </ul>
-            </div>
+    <section class="get-started">
+        <div class="get-started-container"> 
+            <!-- style="background-image: url('/assets/Images/hero.png');"> -->
+            <h2>Get Started</h2>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="destination">Select Destination:</label>
+                    <select id="destination" name="destination" required>
+                        <option value="hawaii">Hawaii</option>
+                        <option value="iceland">Iceland</option>
+                        <option value="greece">Greece</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
         </div>
     </section>
-</section>
 
     <footer>
         <div class="contact">
@@ -82,7 +74,6 @@
                 </div>
             </div>
         </div>
-    
 
         <div class="socials">
             <h3>Social</h3>

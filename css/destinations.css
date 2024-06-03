@@ -59,9 +59,10 @@ body {
     text-align: center;
     font-size: 36px;
     margin-top: 60px;
-    height: calc(100vh - 60px); /* Adjust height to cover full screen minus header */
+    height: calc(100vh - 60px);
     position: relative;
     z-index: 1;
+    top: -10px;
 }
 
 .itinerary {
@@ -79,6 +80,7 @@ body {
 
 .itinerary-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
@@ -90,10 +92,11 @@ body {
     margin-bottom: 20px;
     text-align: center;
     cursor: pointer;
-    width: auto;
+    width: calc(33% - 40px);
     height: auto;
     transition: transform 0.2s;
     position: relative;
+    margin: 10px;
 }
 
 .itinerary-card:hover {
@@ -129,7 +132,7 @@ body {
 
 .itinerary-card ul li {
     color: #030507;
-    background-color:#FEFAF5;
+    background-color: #FEFAF5;
     font-size: 40px;
     margin-bottom: 56px;
 }
@@ -139,14 +142,15 @@ footer {
     padding: 20px;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 footer div {
-    flex: auto;
+    margin: 10px;
 }
 
 .socials-icons {
-   display: flex;
+    display: flex;
 }
 
 footer h3 {
@@ -181,17 +185,129 @@ footer .socials-icons img {
     height: 24px;
 }
 
-
-.hours-content div {
-    display: inline-block;
-    margin-right: 20px;
+.get-started-container h2 {
+    color: #335576;
+    margin-bottom: 50px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
 }
 
-footer .socials-icons a {
-    margin-right: 10px;
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
 }
 
-footer .socials-icons img {
-    width: 24px;
-    height: 24px;
+.form-group label {
+    display: block;
+    color: #335576;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.submit-btn {
+    background-color: #DB7A4E;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+.submit-btn:hover {
+    background-color: #FFC080;
+}
+
+.get-started-container {
+    background-color: #F7F7F7;
+    padding: 20px;
+    border: 1px solid #CCCCCC;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .header nav ul {
+        flex-direction: column;
+    }
+
+    .header nav ul li {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .destination-banner {
+        padding: 50px 20px;
+        font-size: 28px;
+    }
+
+    .itinerary-container {
+        flex-direction: column;
+    }
+
+    .itinerary-card {
+        width: calc(100% - 40px);
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header .travelsite-text {
+        font-size: 20px;
+    }
+
+    .header nav ul {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header nav ul li {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .destination-banner {
+        padding: 30px 20px;
+        font-size: 24px;
+    }
+
+    .itinerary h2 {
+        font-size: 24px;
+    }
+
+    .itinerary-card h3 {
+        font-size: 20px;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer div {
+        margin: 10px 0;
+    }
+
+    .submit-btn {
+        width: 100%;
+        text-align: center;
+    }
 }

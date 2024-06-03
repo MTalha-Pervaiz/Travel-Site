@@ -3,3 +3,171 @@ body {
     margin: 0;
     padding: 0;
 }
+
+@media (max-width: 1200px) {
+    .recommendations-card {
+        width: 30%;
+    }
+}
+
+@media (max-width: 992px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .header nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .header nav ul li {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .banner {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .banner-text-container {
+        margin: 0;
+    }
+
+    .banner-image {
+        height: 250px;
+        max-width: 100%;
+    }
+
+    .recommendations-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer div {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header .travelsite-text {
+        font-size: 20px;
+    }
+
+    .header nav ul li a {
+        font-size: 14px;
+    }
+
+    .banner-heading {
+        font-size: 28px;
+    }
+
+    .banner-text {
+        font-size: 16px;
+    }
+
+    .get-started-btn {
+        font-size: 14px;
+    }
+
+    .recommendations-card {
+        width: 45%;
+        margin: 10px 0;
+    }
+
+    .recommendations-heading {
+        font-size: 24px;
+    }
+
+    .recommendations-card h3 {
+        font-size: 20px;
+    }
+
+    footer h3 {
+        font-size: 16px;
+    }
+
+    footer h6 {
+        font-size: 14px;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+
+    .itinerary h2 {
+        font-size: 24px;
+    }
+
+    .itinerary .day h3 {
+        font-size: 20px;
+    }
+
+    .itinerary .day ul li {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 576px) {
+    .header {
+        padding: 10px 5px;
+    }
+
+    .banner {
+        padding: 70px 10px 10px 10px;
+        margin-top: 50px;
+    }
+
+    .banner-heading {
+        font-size: 24px;
+    }
+
+    .banner-text {
+        font-size: 14px;
+    }
+
+    .get-started-btn {
+        padding: 8px 16px;
+        font-size: 12px;
+    }
+
+    .recommendations-card {
+        width: 90%;
+    }
+
+    .recommendations-heading {
+        font-size: 20px;
+    }
+
+    footer h3 {
+        font-size: 14px;
+    }
+
+    footer h6 {
+        font-size: 12px;
+    }
+
+    footer p {
+        font-size: 10px;
+    }
+
+    .itinerary h2 {
+        font-size: 20px;
+    }
+
+    .itinerary .day h3 {
+        font-size: 18px;
+    }
+
+    .itinerary .day ul li {
+        font-size: 14px;
+    }
+}
+
